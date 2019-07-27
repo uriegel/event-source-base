@@ -2,4 +2,4 @@
 ## Building
 run ```npm install```
 ## Building for debugging
-run ```npm install --debug``
+run ```npm install --debug```

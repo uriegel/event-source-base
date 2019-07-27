@@ -1,7 +1,7 @@
 {
-  "name": "event-source-base-test",
+  "name": "event-source-base",
   "version": "1.0.0",
-  "description": "Testing npm package 'event-source-base'",
+  "description": "Node.js events from C++",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
@@ -15,16 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uriegel/event-source-base-test.git"
+    "url": "git+https://github.com/uriegel/event-source-base.git"
   },
   "author": "Uwe Riegel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uriegel/event-source-base-test/issues"
+    "url": "https://github.com/uriegel/event-source-base/issues"
   },
-  "homepage": "https://github.com/uriegel/event-source-base-test#readme",
+  "homepage": "https://github.com/uriegel/event-source-base#readme",
   "dependencies": {
-    "bindings": "^1.5.0",
     "node-addon-api": "^1.7.1"
+  },
+  "devDependencies": {
+    "bindings": "^1.5.0"
   }
 }
