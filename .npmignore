@@ -1,0 +1,5 @@
+build
+index.js
+addon.cpp
+binding.gyp
+.vscode

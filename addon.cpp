@@ -2,6 +2,7 @@
 #include <thread>
 #include "event-source-base.h"
 using namespace Napi;
+using namespace EventSourceBase;
 using namespace std;
 
 class EventSource : public EventSourceBase {

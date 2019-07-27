@@ -2,6 +2,8 @@
 #include <napi.h>
 #include <uv.h>
 
+namespace EventSourceBase {
+
 class EventSourceBase {
 public:
     EventSourceBase(const Napi::Function& callback) 
@@ -44,3 +46,5 @@ protected:
 private:    
     uv_async_t uv_async{0};
 };
+
+}
