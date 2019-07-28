@@ -50,9 +50,16 @@ Value UnregisterTestEvents(const CallbackInfo& info) {
     return info.Env().Undefined();
 }
 
+String GetInclude(const Env& env) {
+    napi_value result;
+    napi_run_script(env, String::New(env, "process.cwd() + '/node_modules/event-source-base'"), &result);
+    return String(env, result);
+}
+
 Object Init(Env env, Object exports) {
     exports.Set(String::New(env, "registerTestEvents"), Function::New(env, RegisterTestEvents));
     exports.Set(String::New(env, "unregisterTestEvents"), Function::New(env, UnregisterTestEvents));
+    exports.Set(String::New(env, "include"), GetInclude(env));
     return exports;
 }
 

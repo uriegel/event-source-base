@@ -1,5 +1,7 @@
 const addon = require('bindings')('event-source-base-test')
 
+console.log(addon.include)
+
 const eventSource = addon.registerTestEvents(n => {
     console.log(`from callback: ${n}`)    
 })
