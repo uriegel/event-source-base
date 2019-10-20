@@ -19,12 +19,12 @@ public:
     void Start() {
         Initialize();
         thread thread([this] {
-            Sleep(2000);
+            this_thread::sleep_for(2s);
             while (isRunning)
             {
                 state++;
                 SendEvent();
-                Sleep(2000);
+                this_thread::sleep_for(2s);
             }
         });
         thread.detach();        
